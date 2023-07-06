@@ -1,0 +1,49 @@
+---
+import About from "../components/landing/About.astro";
+import Features from "../components/landing/Features.astro";
+import Hero from "../components/landing/Hero.astro";
+import More from "../components/landing/More.astro";
+import Projects from "../components/landing/Projects.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Test">
+  <main>
+    <Hero />
+    <ul>
+      <li>
+        <a href="./post-1/">Ciberseguridad</a>
+      </li>
+      <li>
+        <a href="./post-2/">Post 2</a>
+      </li>
+      <li>
+        <a href="./post-3/">Post 3</a>
+      </li>
+      <li>
+        <a href="./post-4/">Post 4</a>
+      </li>
+      <li>
+        <a href="./post-5/">Post 5</a>
+      </li>
+      <li>
+        <a href="./post-6/">Post 6</a>
+      </li>
+    </ul>
+    <!-- <More /> -->
+    <!-- <Features />
+		<About /> -->
+    <Projects />
+  </main>
+</Layout>
+
+<style>
+  :global(h1) {
+    margin: 3rem 0;
+  }
+
+  main {
+    max-width: 1440px;
+    margin: auto;
+  }
+</style>
